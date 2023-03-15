@@ -1,4 +1,5 @@
 @extends('layout.section')
+@section('cours' , 'active')
 @section('section')
 
 <div class="col-xl-11 m-auto">
@@ -7,7 +8,7 @@
 			<div class="card-title m-0">
 				<h3 class="fw-bold m-0">Cours Details</h3>
 			</div>
-			<a href="{{ route('cour_edit', $cours_show->id) }}" class="btn btn-sm btn-primary align-self-center">Edit Cours</a>
+			<a href="{{ route('cour_edit', $cours_show->id) }}" class="btn btn-sm btn-primary align-self-center">Modifier Cours</a>
 		</div>
 		<div class="card-body p-9">
 			<div class="row mb-7">

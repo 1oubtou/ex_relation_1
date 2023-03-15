@@ -1,13 +1,14 @@
 @extends('layout.section')
+@section('classe' , 'active')
 @section('section')
 
 <div class="col-xl-11 m-auto">
 	<div class="card-body p-8 bg-white rounded border border-secondary">
 		<div class="d-flex justify-content-between mb-10">
 			<div class="card-title m-0">
-				<h3 class="fw-bold m-0">List Classes</h3>
+				<h3 class="fw-bold m-0">Liste Classe</h3>
 			</div>
-			<a href="{{ route('classe_create') }}" class="btn btn-sm btn-primary align-self-center">Creat Classe</a>
+			<a href="{{ route('classe_create') }}" class="btn btn-sm btn-primary align-self-center">Ajoute Classe</a>
 		</div>
 		@if ($clase->isEmpty())
 			<h3 class="text-center text-danger">Desole aucune donnee a afficher.</h3>
@@ -18,9 +19,9 @@
 					<!--begin::Table row-->
 					<tr class="text-center text-gray-400 fw-bold">
 						<th class="min-w-100px">#</th>
-						<th class="min-w-100px">Number Classe</th>
+						<th class="min-w-100px">Numero Classe</th>
 						<th class="min-w-100px">Etudiant</th>
-						<th class="min-w-100px">Prof</th>
+						<th class="min-w-100px">Professeurs</th>
 						<th class="min-w-100px">Actions</th>
 					</tr>
 					<!--end::Table row-->
@@ -59,7 +60,7 @@
 								</a>
 							</td>
 							<td>
-								<a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+								<a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="hover" data-kt-menu-placement="bottom-end">Actions
 									<span class="svg-icon svg-icon-5 m-0">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z" fill="currentColor" />

@@ -1,4 +1,5 @@
 @extends('layout.section')
+@section('etudiant' , 'active')
 @section('section')
 
 <div class="col-xl-11 m-auto">
@@ -127,7 +128,9 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-end">
-					<button type="reset" data-kt-contacts-type="cancel" class="btn btn-light me-3">Cancel</button>
+					<a href="{{ route('etudiant_index') }}" class="btn btn-light mx-5">
+						<span class="indicator-label">Annuler</span>
+					</a>
 					
 					<button type="submit" data-kt-contacts-type="submit" class="btn btn-primary">
 						<span class="indicator-label">Save</span>

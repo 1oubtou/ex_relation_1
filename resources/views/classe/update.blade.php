@@ -1,4 +1,5 @@
 @extends('layout.section')
+@section('classe' , 'active')
 @section('section')
 
 <div class="col-xl-7 m-auto">
@@ -22,6 +23,9 @@
 										<span class="text-danger">{{ $message }}</span>
 									@enderror
 								</div>
+								<a href="{{ route('classe_index') }}" class="btn btn-light mx-5">
+									<span class="indicator-label">Annuler</span>
+								</a>
 								<button type="submit" class="btn btn-primary">
 									<span class="indicator-label">Save</span>
 								</button>

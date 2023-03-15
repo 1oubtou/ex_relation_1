@@ -1,13 +1,14 @@
 @extends('layout.section')
+@section('prof' , 'active')
 @section('section')
 
 <div class="col-xl-11 m-auto">
 	<div class="card">
 		<div class="card-header">
 			<div class="card-title m-0">
-				<h3 class="fw-bold m-0">Prof Details</h3>
+				<h3 class="fw-bold m-0">Professeurs Details</h3>
 			</div>
-			<a href="{{ route('prof_edit', $prof_show->id) }}" class="btn btn-sm btn-primary align-self-center">Edit Prof</a>
+			<a href="{{ route('prof_edit', $prof_show->id) }}" class="btn btn-sm btn-primary align-self-center">Modifier Professeur</a>
 		</div>
 		<div class="card-body p-9">
 			<div class="row mb-7">

@@ -1,4 +1,5 @@
 @extends('layout.section')
+@section('classe' , 'active')
 @section('section')
 
 <div class="col-xl-7 m-auto">

@@ -5,9 +5,9 @@
 	<div class="card-body p-8 bg-white rounded border border-secondary">
 		<div class="d-flex justify-content-between mb-10">
 			<div class="card-title m-0">
-				<h3 class="fw-bold m-0">Number Classe : {{ $classe->number }}</h3>
+				<h3 class="fw-bold m-0">Numero Classe : {{ $classe->number }}</h3>
 			</div>
-			<a href="{{ route('classe_index') }}" class="btn btn-sm btn-primary align-self-center">List Classe</a>
+			<a href="{{ route('classe_index') }}" class="btn btn-sm btn-primary align-self-center">Liste Classe</a>
 		</div>
 		@if ($prof->isEmpty())
 			<h3 class="text-center text-danger">Desole il ny a pas prof dans cette classe.</h3>

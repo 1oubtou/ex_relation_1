@@ -1,11 +1,12 @@
 @extends('layout.section')
+@section('prof' , 'active')
 @section('section')
 
 <div class="col-xl-11 m-auto">
 	<div class="card card-flush">
 		<div class="card-body">
 			<div class="pb-3" >
-				<h2>Ajouter Prof</h2>
+				<h2>Ajouter Professeurs</h2>
 			</div>
 			<form action="{{ route('prof_store') }}" method="POST">
 				@csrf
@@ -120,7 +121,9 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-end">
-					<button type="reset" data-kt-contacts-type="cancel" class="btn btn-light me-3">Cancel</button>
+					<a href="{{ route('prof_index') }}" class="btn btn-light mx-5">
+						<span class="indicator-label">Annuler</span>
+					</a>
 					
 					<button type="submit" data-kt-contacts-type="submit" class="btn btn-primary">
 						<span class="indicator-label">Save</span>
